@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores matematicas</title>
+</head>
+<body>
+    <script>
+
+      
+       var escolha= parseInt(prompt("escolha uma uma opção  1 para retangulo, 2 para quadrado, 3 para losango, 4 para trapézio , 5 para Paralelogramo, 6 para Triângulo"));
+       
+       if (escolha == 1) {
+           retangulo()
+            
+        }
+
+        else if (escolha == 2){
+            quadrado()
+
+        }
+       function retangulo() {
+
+  
+        var base= prompt("Insira o valor da base")
+        var altura= prompt("Insira o valor da altura")
+        var area= base * altura 
+        
+        alert("O valor da área do retangulo é: " +area)
+
+       }
+       
+       function quadrado(){
+
+        var lado1= prompt(" Digite o 1° lado")
+        var lado2= prompt( "Digite o 2° lado")
+        var areaq= lado* lado
+
+        alert("O valor da área do quadrado é: " +areaq)
+       } 
+
+       function losangulo() {
+        var d_menor= prompt("Digite a diagonal menor")
+        var d_maior= prompt("Digite a diagonal maior")
+        var areal= (d_menor * d_maior)/2
+
+        alert("O valor da área do losango é: " + areal)
+       }
+
+        function trapezio (){
+            var base_maior= prompt("Digite a base maior")
+            var base_menor= prompt("Digite a base menor")
+            var altura= prompt("Digite a altura")
+            var areat= [(base_maior + base)* altura]/2
+
+            alert("O valor da área do trapézio é: " + areat)
+        } 
+
+        function Paralelogramo(){
+           
+        var base= prompt("Insira o valor da base")
+        var altura= prompt("Insira o valor da altura")
+        var areap= base * altura 
+
+        alert( "O valor da area do Paralelogramo é : "+ areap)
+        
+
+        }
+
+        function triangulo(){
+                
+        var base= prompt("Insira o valor da base")
+        var altura= prompt("Insira o valor da altura")
+        var areat= ( base * altura )/2
+
+        alert( "O valor da area do triângulo é : "+ areat)
+        
+
+        }
+
+        function circulo(){
+            var pi= 3.14
+            
+        }
+
+
+        
+
+        </script>
+    
+</body>
+</html>
